@@ -46,6 +46,15 @@ body {
   position: relative;
 }
 
+@layer base {
+
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
 @layer components {
   .btn-military {
     @apply bg-military-600 hover:bg-military-500 text-white font-bold py-2 px-4 rounded transition-colors duration-200 border border-military-400;
