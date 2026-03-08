@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-military-50: #f6f7f6;
+  --color-military-100: #e3e7e3;
+  --color-military-200: #c7cfc7;
+  --color-military-300: #a3afa3;
+  --color-military-400: #7a897a;
+  --color-military-500: #5d6d5d;
+  --color-military-600: #4a574a;
+  --color-military-700: #3d473d;
+  --color-military-800: #333b33;
+  --color-military-900: #2c322c;
+  --color-military-950: #171c17;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #171c17;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #171c17;
+  /* military-950 */
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@layer components {
+  .btn-military {
+    @apply bg-military-600 hover:bg-military-500 text-white font-bold py-2 px-4 rounded transition-colors duration-200 border border-military-400;
+  }
+
+  .card-military {
+    @apply bg-military-900 border border-military-800 rounded-lg p-4 shadow-lg;
+  }
+}
