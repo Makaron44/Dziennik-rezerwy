@@ -54,7 +54,7 @@ const NotesModule = () => {
                             </span>
                             <button
                                 onClick={() => setNotes(notes.filter(n => n.id !== note.id))}
-                                className="opacity-0 group-hover:opacity-100 p-1 text-red-900/50 hover:text-red-500 transition-all"
+                                className="p-1 text-red-900/40 hover:text-red-500 transition-all"
                             >
                                 <Trash2 className="w-4 h-4" />
                             </button>

@@ -67,7 +67,7 @@ const OperationsSchedule = () => {
                             </div>
                             <button
                                 onClick={() => deleteTask(item.id)}
-                                className="opacity-0 group-hover:opacity-100 p-2 text-military-800 hover:text-red-500 transition-all"
+                                className="p-2 text-military-700 hover:text-red-500 transition-all"
                             >
                                 <Trash2 className="w-4 h-4" />
                             </button>
